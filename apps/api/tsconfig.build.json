@@ -1,0 +1,28 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "ES2022",
+      "lib": ["ES2022"],
+      "rootDir": "./src",
+      "outDir": "./dist",
+  
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+  
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "resolveJsonModule": true,
+  
+      "sourceMap": true,
+      "removeComments": true,
+      "noEmit": false,
+  
+      "strict": true,
+      "skipLibCheck": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "test", "dist", "**/*.spec.ts"]
+  }
+  

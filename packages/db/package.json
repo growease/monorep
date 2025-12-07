@@ -1,0 +1,31 @@
+{
+  "name": "@growease/db",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:db-push": "prisma db push",
+    "prisma:studio": "prisma studio",
+    "prisma:format": "prisma format",
+    "prisma:reset": "prisma migrate reset",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@growease/types": "workspace:*",
+    "@prisma/client": "^5.9.1"
+  },
+  "devDependencies": {
+    "@growease/config": "workspace:*",
+    "@types/node": "^20.11.5",
+    "prisma": "^5.9.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  }
+}
